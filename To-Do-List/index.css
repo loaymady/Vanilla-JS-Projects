@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 40px auto 0px;
+  max-width: 100%;
+}
+.form {
+  background-color: rgb(179, 169, 169);
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 40px;
+}
+.form .input {
+  flex: 1;
+  margin-right: 30px;
+  padding: 9px;
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+}
+.form input[type="submit"] {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  background-color: red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .form {
+    flex-direction: column;
+  }
+  .form .input {
+    flex: 0;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .form input[type="submit"] {
+    width: 35%;
+  }
+}
+.tasks {
+  background-color: rgb(179, 169, 169);
+  padding: 5px 0px;
+  min-height: 60px;
+}
+.tasks .task {
+  margin: 20px 30px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  transition: 0.3s;
+}
+.tasks .task.done {
+  opacity: 0.5;
+}
+.task div {
+  font-weight: bold;
+}
+.task button {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border: none;
+  background-color: red;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="slider-container container">
+      <div id="slide-number" class="slide-number">Slide #1</div>
+      <img decoding="async" src="imgs/01.jpg" class="active" alt="" />
+      <img decoding="async" src="imgs/02.jpg" alt="" />
+      <img decoding="async" src="imgs/03.jpg" alt="" />
+      <img decoding="async" src="imgs/04.jpg" alt="" />
+      <img decoding="async" src="imgs/05.jpg" alt="" />
+    </div>
+    <div class="slider-controls container">
+      <span id="prev" class="prev">Previous</span>
+      <span id="indicators" class="indicators"></span>
+      <span id="next" class="next">Next</span>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
